@@ -12,12 +12,12 @@
         }
 
         :root {
-            --primary: #6366f1;
-            --secondary: #8b5cf6;
-            --accent: #ec4899;
-            --dark: #1e1b4b;
-            --light: #f8fafc;
-            --gray: #64748b;
+            --primary: #912527;
+            --secondary: #7B7971;
+            --accent: #C5A990;
+            --dark: #181717;
+            --light: #FCFDFC;
+            --gray: #7B7971;
         }
 
         body {
@@ -28,7 +28,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
             color: white;
             min-height: 100vh;
             display: flex;
@@ -42,7 +42,7 @@
             position: absolute;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background: radial-gradient(circle, rgba(197,169,144,0.1) 1px, transparent 1px);
             background-size: 50px 50px;
             animation: moveBackground 20s linear infinite;
         }
@@ -102,23 +102,25 @@
         }
 
         .btn-primary {
-            background: white;
-            color: var(--primary);
+            background: var(--accent);
+            color: var(--dark);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 6px 20px rgba(197,169,144,0.4);
+            background: #d4b9a0;
         }
 
         .btn-secondary {
-            background: rgba(255,255,255,0.2);
+            background: rgba(197,169,144,0.2);
             color: white;
             backdrop-filter: blur(10px);
+            border: 2px solid var(--accent);
         }
 
         .btn-secondary:hover {
-            background: rgba(255,255,255,0.3);
+            background: rgba(197,169,144,0.3);
             transform: translateY(-3px);
         }
 
@@ -176,14 +178,14 @@
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+            box-shadow: 0 20px 40px rgba(145, 37, 39, 0.2);
             border-color: var(--primary);
         }
 
         .feature-icon {
             width: 70px;
             height: 70px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -204,7 +206,7 @@
         }
 
         .testimonials {
-            background: linear-gradient(135deg, var(--dark) 0%, #312e81 100%);
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
             color: white;
         }
 
@@ -215,16 +217,16 @@
         }
 
         .testimonial-card {
-            background: rgba(255,255,255,0.1);
+            background: rgba(197,169,144,0.15);
             backdrop-filter: blur(10px);
             padding: 35px;
             border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(197,169,144,0.3);
             transition: all 0.3s ease;
         }
 
         .testimonial-card:hover {
-            background: rgba(255,255,255,0.15);
+            background: rgba(197,169,144,0.25);
             transform: translateY(-5px);
         }
 
@@ -258,7 +260,7 @@
         }
 
         .cta-section {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
+            background: linear-gradient(135deg, var(--primary), var(--dark));
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -373,7 +375,7 @@
             display: block;
             width: 30px;
             height: 50px;
-            border: 2px solid white;
+            border: 2px solid var(--accent);
             border-radius: 25px;
             position: relative;
         }
@@ -383,7 +385,7 @@
             position: absolute;
             width: 6px;
             height: 10px;
-            background: white;
+            background: var(--accent);
             border-radius: 3px;
             top: 8px;
             left: 50%;
@@ -521,7 +523,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Estudia Mejor. Todos los derechos reservados.</p>
+            <p>&copy; 2025 M. G. Gil. Todos los derechos reservados.</p>
             <p>Una guía práctica para aprender con éxito</p>
         </div>
     </footer>
